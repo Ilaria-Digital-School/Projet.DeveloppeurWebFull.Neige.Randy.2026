@@ -331,23 +331,25 @@ h1{
 /* contact */
 
 .container-contact{
-    width: 1200px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    box-sizing: border-box;
     margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-
+    margin-bottom: 40px;    
 }
 
 .container-call{
-    width: 600px;
+    max-width: 600px;
     height: auto;
+    margin-bottom: 40px;
+    box-sizing: border-box;    
 }
 
 .container-message{
-    width: 600px;
+    max-width: 600px;
     height: auto;
+    box-sizing: border-box;
 }
 
 .form-call{
@@ -409,10 +411,10 @@ h1{
 /* signin */
 
 .container-signIn{
-    width: 1200px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 40px;
     margin-bottom: 50px;
 }
@@ -421,18 +423,23 @@ h1{
     padding: 20px;
 }
 
+.connect i{
+    font-size: 50px;
+}
+
 .connect h2{
     padding: 30px;
 }
 
 .connect button{
-    padding: 30px;
     margin-bottom: 40px;
+    background-color: white;
+    border-style: none;
 }
 
 .form-signin{
     padding: 20px;
-    width: 600px;
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
     text-align: center;
@@ -463,11 +470,11 @@ h1{
 
 .redir-signup{
     padding-top: 200px;
-    width: 600px;
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
     text-align: center;
-    color: aliceblue;
+    color: white;
     background-image:url(/assets/images/img-signin.webp);
     background-repeat: no-repeat;
     background-position: center;
