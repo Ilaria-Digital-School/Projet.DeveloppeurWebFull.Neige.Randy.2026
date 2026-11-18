@@ -48,7 +48,8 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
 
-                        <input type="text" class="search-input" id="searchInput" placeholder="Rechercher..." aria-label="rechercher une recette" />
+                        <input type="text" class="search-input" id="searchInput" placeholder="Rechercher..."
+                            aria-label="rechercher une recette" />
 
                     </div>
                 </div>
@@ -83,8 +84,109 @@
                 </div>
             </div>
         </section>
-        <section class="recettes">
-            <h2>Recettes</h2>
+
+        <section class="recettes container my-5">
+            <div class="row g-4 g-lg-5">
+
+                <!-- sidebar recettes -->
+
+                <aside class="col-lg-3 ps-lg-0">
+                    <h2 class="fw-bold mb-4">Recettes</h2>
+
+
+                    <div class="mb-3">
+
+                        <button
+                            class="btn w-100 d-flex justify-content-between align-items-center p-0 mb-2 border-0 shadow-none text-start fw-semibold fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#recettesCat" aria-expanded="true">
+                            <span>Catégories de recettes</span>
+                            <span class="toggle-icon fs-4 lh-1"></span>
+                        </button>
+
+                        <div class="collapse show" id="recettesCat">
+                            <ul class="nav flex-column gap-2 ps-2">
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Apéro</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Entrées</a></li>                                
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Plats</a></li>                                
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Desserts</a></li>                               
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Boissons</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Brunch et petit déj</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Salades</a></li>                                
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Végetarien</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <button
+                            class="btn w-100 d-flex justify-content-between align-items-center p-0 border-0 shadow-none text-start fw-semibold fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#festiveDishes"
+                            aria-expanded="false">
+                            <span>Repas de fêtes</span>
+                            <span class="toggle-icon fs-4 lh-1"></span>
+                        </button>
+
+                        <div class="collapse" id="festiveDishes">
+                            <ul class="nav flex-column gap-2 ps-2">
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Noël</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Marriage</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <button
+                            class="btn w-100 d-flex justify-content-between align-items-center p-0 border-0 shadow-none text-start fw-semibold fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#dietHealthList"
+                            aria-expanded="false">
+                            <span>Sain et diétetique</span>
+                            <span class="toggle-icon fs-4 lh-1"></span>
+                        </button>
+
+                        <div class="collapse" id="dietHealthList">
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <button
+                            class="btn w-100 d-flex justify-content-between align-items-center p-0 border-0 shadow-none text-start fw-semibold fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#worldCuisineList"
+                            aria-expanded="false">
+                            <span>Cuisine du monde</span>
+                            <span class="toggle-icon fs-4 lh-1"></span>
+                        </button>
+
+                        <div class="collapse" id="worldCuisineList">
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <button
+                            class="btn w-100 d-flex justify-content-between align-items-center p-0 border-0 shadow-none text-start fw-semibold fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#seasonalList"
+                            aria-expanded="false">
+                            <span>De saison</span>
+                            <span class="toggle-icon fs-4 lh-1"></span>
+                        </button>
+
+                        <div class="collapse" id="seasonalList">
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <!-- section recettes -->
+                <div class="col-lg-9">
+                </div>
+
+            </div>
+            </div>
         </section>
 
         <section class="Videos">
@@ -93,13 +195,13 @@
 
         <div class="subscribe">
             <form action="" method="" class="subscribe-cta">
-        
+
                 <p>Soyez le premier à être informé des dernières offres, recevez les nouvelles recettes tendances et
                     plus
                     encore !</p>
                 <div class="subscribe-form">
                     <input type="email" name="email" id="newsletter" placeholder="adresse e-mail">
-        
+
                     <button type="submit" id="send-btn">S' abonner</button>
                 </div>
             </form>
@@ -109,36 +211,38 @@
 
     <footer class="container-footer">
         <div class="link-icons">
-            <a target="_blank" href="https://x.com/" aria-label="lien vers X"><i class="fa-brands fa-square-x-twitter" id="x"></i></a>
-            <a target="_blank" href="https://www.instagram.com/" aria-label="lien vers Instagram"><i class="fa-brands fa-square-instagram"
-                    id="insta"></i></a>
-            <a target="_blank" href="https://facebook.com" aria-label="lien vers Facebook"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
+            <a target="_blank" href="https://x.com/" aria-label="lien vers X"><i class="fa-brands fa-square-x-twitter"
+                    id="x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/" aria-label="lien vers Instagram"><i
+                    class="fa-brands fa-square-instagram" id="insta"></i></a>
+            <a target="_blank" href="https://facebook.com" aria-label="lien vers Facebook"><i
+                    class="fa-brands fa-square-facebook" id="fb"></i></a>
         </div>
         <div class="container-footer-list container">
             <div class="row justify-content-center">
-                
-                    <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-                        <li><a href="">Présentation</a></li>
-                        <li><a href="">Mentions légales</a></li>
-                        <li><a href="">Conditions Générales</a></li>
+                <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-                    </ul>
-                    <ul class="col-12 col-md-3 col-lg-3 text-center">
+                    <li><a href="">Présentation</a></li>
+                    <li><a href="">Mentions légales</a></li>
+                    <li><a href="">Conditions Générales</a></li>
 
-                        <li><a href="">Près de chez vous</a></li>
-                        <li><a href="">Nos engagements</a></li>
-                        <li><a href="">Nos partenaires</a></li>
+                </ul>
+                <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-                    </ul>
-                    <ul class="col-12 col-md-3 col-lg-3 text-center">
+                    <li><a href="">Près de chez vous</a></li>
+                    <li><a href="">Nos engagements</a></li>
+                    <li><a href="">Nos partenaires</a></li>
 
-                        <li><a href="">Formulaire de contact</a></li>
-                        <li><a href="">Travailler avec nous</a></li>
-                        <li><a href="">Nous rendre visite</a></li>
+                </ul>
+                <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-                    </ul>
-                
+                    <li><a href="">Formulaire de contact</a></li>
+                    <li><a href="">Travailler avec nous</a></li>
+                    <li><a href="">Nous rendre visite</a></li>
+
+                </ul>
+
             </div>
         </div>
 

@@ -277,6 +277,16 @@ h1{
     box-sizing: border-box;
 } 
 
+/* sidebar recettes */
+
+[aria-expanded="false"] .toggle-icon::before {
+  content: "+";
+}
+
+[aria-expanded="true"] .toggle-icon::before {
+  content: "−";
+}
+
 /* section vidéo */
 
 .videos{
