@@ -5,6 +5,14 @@
     
 }
 
+:root {
+  --bs-body-font-family: "InterVariable", "Inter", sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: "InterVariable", sans-serif; }
+}
+
 body{
     width: 100%;
     max-width: 100%;
@@ -12,10 +20,32 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    font-family: "inter", monospace, sans-serif;
+    font-family: "InterVariable", "inter", sans-serif;
+    /* réglages police pour dyslexie */
+    font-feature-settings: "cv05" 1, "cv08", "zero" 1 !important;
+    font-size: 1.125rem;        
+    line-height: 1.6;           
+    letter-spacing: 0.05em;    
+    word-spacing: 0.16em;       
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+
+input,
+textarea,
+select,
+button,
+.btn {
+  font-family: 'InterVariable', 'Inter', sans-serif !important;
+  font-feature-settings: "cv05" 1, "cv08" 1, "zero" 1 !important;
+}
+ 
+/* Applique aussi les glyphes différenciés au texte d'aide (placeholder) */
+input::placeholder,
+textarea::placeholder {
+  font-family: 'InterVariable', 'Inter', sans-serif !important;
+  font-feature-settings: "cv05" 1, "cv08" 1, "zero" 1 !important;
 }
 
 main{
