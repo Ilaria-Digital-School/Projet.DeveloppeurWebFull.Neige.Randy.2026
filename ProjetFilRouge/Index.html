@@ -104,12 +104,13 @@
                         <div class="collapse show" id="recettesCat">
                             <ul class="nav flex-column gap-2 ps-2">
                                 <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Apéro</a></li>
-                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Entrées</a></li>                                
-                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Plats</a></li>                                
-                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Desserts</a></li>                               
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Entrées</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Plats</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Desserts</a></li>
                                 <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Boissons</a></li>
-                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Brunch et petit déj</a></li>
-                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Salades</a></li>                                
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Brunch et petit
+                                        déj</a></li>
+                                <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Salades</a></li>
                                 <li class="nav-item"><a class="nav-link p-0 text-secondary" href="">Végetarien</a></li>
                             </ul>
                         </div>
@@ -180,11 +181,119 @@
                 </aside>
 
                 <!-- section recettes -->
-                <div class="col-lg-9">
+                <div class="container-recettes col-lg-9">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Trier par :
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Le plus récentes</a></li>
+                            <li><a class="dropdown-item" href="#">Les mieux notées</a></li>
+                            <li><a class="dropdown-item" href="#">les plus faciles</a></li>
+                        </ul>
+                    </div>
+                
+                    <div id="carouselRecettes" class="carousel slide" data-bs-ride="false">                
+                        
+                        <div class="carousel-inner">
+                
+                            <!-- PAGE 1 (Active par défaut) -->
+                            <div class="carousel-item active">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                                    <!-- Carte 1 -->
+                                    <div class="col">
+                                        <div class="card carte-recette h-100 border-0 bg-transparent">
+                                            <div class="image-wrapper mb-2">
+                                                <img src="assets/images/brandade.webp" alt="Recette 1">
+                                            </div>
+                                            <h6 class="fw-bold mb-1">Brandade de morue</h6>
+                                            <div class="d-flex justify-content-between small text-muted">
+                                                <span><span class="text-warning">★</span> 5.0 (73)</span>
+                                                <span>by jean jean</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="col">
+                                        <div class="card carte-recette h-100 border-0 bg-transparent">
+                                            <div class="image-wrapper mb-2">
+                                                <img src="assets/images/soupe.webp" alt="Recette 1">
+                                            </div>
+                                            <h6 class="fw-bold mb-1">Velouté de poireaux</h6>
+                                            <div class="d-flex justify-content-between small text-muted">
+                                                <span><span class="text-warning">★</span> 5.0 (73)</span>
+                                                <span>by jean paul</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <div class="card carte-recette h-100 border-0 bg-transparent">
+                                            <div class="image-wrapper mb-2">
+                                                <img src="assets/images/anguille.webp" alt="Recette 1">
+                                            </div>
+                                            <h6 class="fw-bold mb-1">les anguilles de Maïté</h6>
+                                            <div class="d-flex justify-content-between small text-muted">
+                                                <span><span class="text-warning">★</span> 5.0 (73)</span>
+                                                <span>Maïté</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card carte-recette h-100 border-0 bg-transparent">
+                                            <div class="image-wrapper mb-2">
+                                                <img src="assets/images/choucroute.webp" alt="Recette 1">
+                                            </div>
+                                            <h6 class="fw-bold mb-1">Faisan à la choucroute</h6>
+                                            <div class="d-flex justify-content-between small text-muted">
+                                                <span><span class="text-warning">★</span> 5.0 (73)</span>
+                                                <span>by jean jaques</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                
+                            <!-- PAGE 2 -->
+                            <div class="carousel-item">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                    <!-- 12 cartes de la page 2 -->
+                                </div>
+                            </div>
+                
+                            <!-- PAGE 3 -->
+                            <div class="carousel-item">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                    <!-- cartes de la page 3 -->
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                        <div class="d-flex justify-content-center align-items-center gap-2 mt-5">
+                            <button class="btn btn-link text-dark text-decoration-none" type="button" data-bs-target="#carouselRecettes"
+                                data-bs-slide="prev">&lsaquo;</button>
+                
+                            <button class="btn btn-link text-dark fw-bold" type="button" data-bs-target="#carouselRecettes"
+                                data-bs-slide-to="0">1</button>
+                            <button class="btn btn-link text-dark text-decoration-none" type="button" data-bs-target="#carouselRecettes"
+                                data-bs-slide-to="1">2</button>
+                            <button class="btn btn-link text-dark text-decoration-none" type="button" data-bs-target="#carouselRecettes"
+                                data-bs-slide-to="2">3</button>
+                
+                            <button class="btn btn-link text-dark text-decoration-none" type="button" data-bs-target="#carouselRecettes"
+                                data-bs-slide="next">&rsaquo;</button>
+                        </div>
+                
+                    </div>
                 </div>
 
             </div>
-            </div>
+            
         </section>
 
         <section class="Videos">

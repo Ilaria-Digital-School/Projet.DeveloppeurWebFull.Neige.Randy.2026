@@ -307,6 +307,12 @@ h1{
     box-sizing: border-box;
 } 
 
+.container-recettes{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 /* sidebar recettes */
 
 [aria-expanded="false"] .toggle-icon::before {
@@ -316,6 +322,77 @@ h1{
 [aria-expanded="true"] .toggle-icon::before {
   content: "−";
 }
+
+/* bouton tri */
+
+
+.btn-secondary{
+    color: white;
+    background-color: rgb(180, 60, 1);    
+    padding: 10px 15px;
+    font-size: large;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid grey; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    transition: all 0.1s ease;
+}
+
+.btn-secondary:hover{
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-secondary:active{
+    box-shadow: 0px 1px 0px #414548;
+    transform: translateY(3px);
+}
+
+.dropdown-menu{
+    border-radius: 20px;
+}
+
+/* cartes recettes */
+
+.carousel.slide{
+    padding-top: 20px;
+}
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10; 
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+ 
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.carte-recette:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+ 
+.carte-recette h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+#carouselRecettes .carousel-item {
+  padding: 5px;
+}
+
 
 /* section vidéo */
 
